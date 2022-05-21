@@ -21,7 +21,7 @@ def convertir_a_centigrados(fahrenheit):
     result= (fahrenheit-32) / 1.8
     return result
 
-def asignacion(opcion):
+def asignacion(opcion):# Pide al usuario indicar el valor para convertir a la temperatura a difetentes grados
     if(opcion==1):
         print('Ingrese Cuantos Grados desea convertir:')
         numero= int(input(''))
@@ -31,7 +31,7 @@ def asignacion(opcion):
         numero= int(input(''))
         return numero
     
-def menu_opciones():
+def menu_opciones(): # Mustra un menu de opciones al ususuario para saber que temperatura convertir
     print('Este programa convierte grados centigrados a fahrenheit \ntambien de fahrenheit a centrigrados')
     print('Seleccione una opcion para convertir:\n 1 centigrados a fahrenheit\n 2 fahrenheit a centigrados')
     print('-------------------')
@@ -48,7 +48,8 @@ def menu_opciones():
     elif(opcion ==2):
         print('Eligio convertir de fahrenheit a centigrados ')
         return opcion
-def principal():
+
+def principal(): # Invocacion de las funciones creadas
     opcion=menu_opciones()
     numero= asignacion(opcion)
     result_fah= convertir_a_fahrrenheit(numero)
