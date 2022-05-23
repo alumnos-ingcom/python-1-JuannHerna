@@ -25,11 +25,10 @@ def asignacion(opcion):# Pide al usuario indicar el valor para convertir a la te
     if(opcion==1):
         print('Ingrese Cuantos Grados desea convertir:')
         numero= int(input(''))
-        return numero
     elif(opcion==2):
         print('Ingrese Cuantos Grados desea convertir:')
         numero= int(input(''))
-        return numero
+    return numero
     
 def menu_opciones(): # Mustra un menu de opciones al ususuario para saber que temperatura convertir
     print('Este programa convierte grados centigrados a fahrenheit \ntambien de fahrenheit a centrigrados')
@@ -44,10 +43,9 @@ def menu_opciones(): # Mustra un menu de opciones al ususuario para saber que te
             opcion= opcion
     if (opcion == 1):
         print('Eligio convertir de centigrados a fahrenheit')
-        return opcion
     elif(opcion ==2):
         print('Eligio convertir de fahrenheit a centigrados ')
-        return opcion
+    return opcion
 
 def principal(): # Invocacion de las funciones creadas
     opcion=menu_opciones()
