@@ -18,6 +18,7 @@ def signo(numero):
         print("Numero es 0")
 
 def principal():
+    print("Este programa determina si un valor es positvo o negativo")
     numero=int(input("Ingrese numero: "))
     signo(numero)
 
