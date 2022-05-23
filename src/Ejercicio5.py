@@ -13,8 +13,8 @@ def division_lenta(dividendo, divisor):
     while div>=0: # Se repite las veces necesarias para encontrar el cociente y el resto de la division
         cociente +=1
         div-= divisor
-    print(f"Cociente: {cociente} Resto: {div+divisor}") # div+divisor lo que hace es que como el valor de la resta queda negativo para cortar el while
-                                                        #para cortar el bucle se le suma el divisor para que de el resto
+    resto= div + divisor
+    print(f"Cociente: {cociente} Resto: {resto}") 
 
 def principal():
     print("Ingrese 2 numero para realizar la divicion")
