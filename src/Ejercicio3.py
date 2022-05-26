@@ -19,13 +19,11 @@ def compara(numero, otro_numero):
     
     if result<0:
         retorno= -1
-        return retorno
     elif result== 0:
         retorno= 0
-        return retorno
     elif result>0:
         retorno= 1
-        return retorno
+    return retorno
     
 def principal():
     print("Ingrese 2 valores para determinar cual es mayor")
