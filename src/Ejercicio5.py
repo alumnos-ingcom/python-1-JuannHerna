@@ -14,7 +14,14 @@ def division_lenta(dividendo, divisor):
         cociente +=1
         div-= divisor
     resto= div + divisor
-    print(f"Cociente: {cociente} Resto: {resto}") 
+    return cociente
+
+def resto(dividendo, divisor):
+    div= dividendo - divisor
+    while div>=0:
+        div-= divisor
+    resto= div + divisor
+    return resto
 
 def principal():
     print("Ingrese 2 numero para realizar la divicion")
@@ -23,7 +30,9 @@ def principal():
     while num2<=0:
         print("El valor de numero 2 debe ser distinto de 0")
         num2= int(input("Ingrese valor correcto: "))
-    division_lenta(num1,num2)
-
+    cociente= division_lenta(num1,num2)
+    reesto= resto(num1,num2)
+    print(f"Cociente: {cociente} Resto: {reesto}")
+    
 if __name__ == "__main__":
     principal()

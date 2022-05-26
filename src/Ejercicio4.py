@@ -20,14 +20,16 @@ def suma_lenta(numero, otro_numero):
         elif num2<0:
             resultado -= 1
             num2+=1
-    print(f"La suma entre {num1} y {otro_numero} es : {resultado}")     
+    return resultado    
+    
     
     
 def principal():
     print("Ingrese 2 valores para sumar")
     nume1=int(input("Numero 1:"))
     nume2=int(input("Numero 2:"))
-    suma_lenta(nume1, nume2)
+    resultado= suma_lenta(nume1, nume2)
+    print(f"La suma entre {nume1} y {nume2} es : {resultado}")     
     
 if __name__ == "__main__":
     principal()
