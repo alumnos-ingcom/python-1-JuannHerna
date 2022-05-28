@@ -24,10 +24,10 @@ def convertir_a_centigrados(fahrenheit):
 def asignacion(opcion):# Pide al usuario indicar el valor para convertir a la temperatura a difetentes grados
     if(opcion==1):
         print('Ingrese Cuantos Grados desea convertir:')
-        numero= int(input(''))
+        numero= float(input(''))
     elif(opcion==2):
         print('Ingrese Cuantos Grados desea convertir:')
-        numero= int(input(''))
+        numero= float(input(''))
     return numero
     
 def menu_opciones(): # Mustra un menu de opciones al ususuario para saber que temperatura convertir
