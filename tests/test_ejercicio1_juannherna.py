@@ -1,3 +1,7 @@
+###############
+# Juan cruz Hernandez- JuannHerna
+# UNRN Andina - Introducción a la Ingenieria en Computación
+###############
 import pytest
 from src.ejercicio1 import convertir_a_fahrrenheit
 from src.ejercicio1 import convertir_a_centigrados
