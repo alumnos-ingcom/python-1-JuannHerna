@@ -25,11 +25,11 @@ def resto(dividendo, divisor):
 
 def principal():
     print("Ingrese 2 numero para realizar la divicion")
-    num1=int(input("Valor 1: "))
-    num2= int(input("Valor 2: "))
+    num1=float(input("Valor 1: "))
+    num2= float(input("Valor 2: "))
     while num2<=0:
         print("El valor de numero 2 debe ser distinto de 0")
-        num2= int(input("Ingrese valor correcto: "))
+        num2= float(input("Ingrese valor correcto: "))
     cociente= division_lenta(num1,num2)
     reesto= resto(num1,num2)
     print(f"Cociente: {cociente} Resto: {reesto}")
