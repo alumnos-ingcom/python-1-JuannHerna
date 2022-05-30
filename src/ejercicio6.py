@@ -9,8 +9,8 @@ Y Viceversa
 """
 def ordenar_mayor_a_menor(uno, dos, tres):
     lista=[uno, dos, tres]
-     for j in range(1,len(lista)):
-         for i in range(len(lista)-1):
+    for j in range(1,len(lista)):
+        for i in range(len(lista)-1):
              if lista[i]<= lista[i+1]:
                  aux= lista[i]
                  lista[i]=lista[i+1]
