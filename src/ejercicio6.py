@@ -8,24 +8,24 @@ Escribir una función que a partir de tres variables de tipo entero retorne una 
 Y Viceversa
 """
 def ordenar_mayor_a_menor(uno, dos, tres):
-    array=[uno, dos, tres]
-    for j in range(1,len(array)):
-        for i in range(len(array)-1):
-            if array[i]<= array[i+1]:
-                aux= array[i]
-                array[i]=array[i+1]
-                array[i+1]=aux
-    return array
+    lista=[uno, dos, tres]
+    for j in range(1,len(lista)):
+        for i in range(len(lista)-1):
+            if lista[i]<= lista[i+1]:
+                aux= lista[i]
+                lista[i]=lista[i+1]
+                lista[i+1]=aux
+    return lista
     
 def ordenar_menor_a_mayor(uno, dos, tres):
-    array=[uno, dos, tres]
-    for j in range(1,len(array)):
-        for i in range(len(array)-1):
-            if array[i]>= array[i+1]:
-                aux= array[i]
-                array[i]=array[i+1]
-                array[i+1]=aux
-    return array
+    lista=[uno, dos, tres]
+    for j in range(1,len(lista)):
+        for i in range(len(lista)-1):
+            if lista[i]>= lista[i+1]:
+                aux= lista[i]
+                lista[i]=lista[i+1]
+                lista[i+1]=aux
+    return lista
     
 def principal():
     print("Ingrese 3 numero para ordenarlo de mayor a menor")
