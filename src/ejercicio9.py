@@ -7,6 +7,9 @@
 Escribir una función que retorne una tuple con factores primos de un numero entero positivo
 """
 def factores_primos(numero):
+    """
+    factores primos es una funcion en la cual ingresa un numero y determina sus factores primos
+    """
     factor_primo=2
     resto=0
     factores=[]

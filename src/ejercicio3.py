@@ -12,6 +12,9 @@ Retornar 1 si el primero es mayor que el segundo
 """
 
 def compara(numero, otro_numero):
+    """
+    Compara 2 numeros para determinar cual es mayor o si son iguales
+    """
     num1= numero
     num2= otro_numero
     

@@ -8,6 +8,9 @@ Escribir una función que a partir de tres variables de tipo entero retorne una 
 Y Viceversa
 """
 def ordenar_mayor_a_menor(uno, dos, tres):
+    """
+    Funcion ordena en un lista de 3 argumentos de mayor a menor
+    """
     lista=[uno, dos, tres]
     for j in range(1,len(lista)):
         for i in range(len(lista)-1):
@@ -18,6 +21,9 @@ def ordenar_mayor_a_menor(uno, dos, tres):
     return lista
     
 def ordenar_menor_a_mayor(uno, dos, tres):
+    """
+    Funcion ordena en un lista de 3 argumentos de menor a mayor
+    """
     lista=[uno, dos, tres]
     cont=0
     i=0

@@ -8,6 +8,9 @@ Escribir una función que indique con True si una palabra o frase ingresada se t
 Palíndromo,es si se lee igual de derecha a izquierda que de izquierda a derecha.
 """
 def es_palindromo(texto):
+    """
+    Esta funcion determina si un numero o una frase son palindromas
+    """
     text1=texto
     maxx=len(text1)
     tex_reves=''

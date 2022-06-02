@@ -10,6 +10,9 @@ Esto quiere decir que para hacer la suma entre 4 y 3, las operaciones resultante
 La funcion debe ser capaz de sumar cualquier numero entero positivo y negativo.
 """
 def suma_lenta(numero, otro_numero):
+    """
+    Suma 2 numeros, el segundo numero se suma de a 1
+    """
     num2= otro_numero
     num1= numero
     resultado=num1

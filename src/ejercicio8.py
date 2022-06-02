@@ -6,6 +6,9 @@
 Escribir una función que indique con True si un numero indicado es Primo.
 """
 def es_primo(numero):
+    """
+    Esta funcion determina si un numero es primo o no
+    """
     cont=0
     result=0
     for n in range(1,numero+1):

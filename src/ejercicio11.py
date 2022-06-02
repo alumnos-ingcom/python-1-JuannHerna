@@ -6,6 +6,9 @@
 Escribir una función que indique con True si un número entero es multiplo de otro, utilizando sumas y restas.
 """
 def es_multiplo(numero, multiplo):
+    """
+    Esta funcion determina si un numero es multiplo de otro
+    """
     aux=numero
     cont=0
     result= False

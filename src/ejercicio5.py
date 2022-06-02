@@ -7,6 +7,9 @@
 Escribir una función que mediante restas sucesivas, obtenga el valor del cociente y resto de dos números enteros.
 """
 def division_lenta(dividendo, divisor):
+    """
+    Division lenta retorna el cociente de la division
+    """
     resto=0
     cociente=0
     div= dividendo - divisor
@@ -17,6 +20,9 @@ def division_lenta(dividendo, divisor):
     return cociente
 
 def resto(dividendo, divisor):
+    """
+    Funcion devulve el resto de una division con restas sucesibas 
+    """
     div= dividendo - divisor
     while div>=0:
         div-= divisor

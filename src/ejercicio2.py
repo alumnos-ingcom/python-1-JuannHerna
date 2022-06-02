@@ -8,6 +8,9 @@ Escribir una función que reciba un número e indique si el mismo es positivo, n
 
 """
 def signo(numero):
+    """
+    Determina el sigo de un numero retornando un valor numerico 1, -1, 0 
+    """
     num= numero
     minimo=0
     if numero> minimo:
