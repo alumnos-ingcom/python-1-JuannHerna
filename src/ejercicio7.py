@@ -20,8 +20,12 @@ def sexadecimal_a_decimal(horas, minutos, segundos):
     return seg_totales
 
 def decimal_a_sexadecimal(numero):
-    while 
-    
+    hs= numero//3600
+    resto= numero%3600
+    minutos= resto//60
+    seg = resto%60
+    result=(hs,minutos,seg)
+    return result
 
 def principal():
     print("Este programa convierte segundos a horas minutos y segundos")
@@ -39,7 +43,7 @@ def principal():
     elif opcion==2:
         print("Ingrese un valor a transformar")
         num=int(input(""))
-        resultado_sexa= decimal_a_sexdecimal(num)
+        resultado_sexa= decimal_a_sexadecimal(num)
         print(f"Los segundos transdormados a horas minutos y segundos: {resultado_sexa} ")
 if __name__ == "__main__":
     principal()
