@@ -9,40 +9,38 @@ Escribir una función que mediante restas sucesivas, obtenga el valor del cocien
 def division_lenta(dividendo, divisor):
     """
     Division lenta retorna el cociente de la division
-    Precodindicion: Los numero deben ser flotantes positivos
-    Postcondicion: Resultado debe ser positivo
+    Precodindicion: Los numeros deben ser flotantes
+    Postcondicion: Resultado deber ser un tupla con resto y cociente de la division
     """
-    resto=0
+    signo= 0
     cociente=0
+    resto=0
+    if divisor<0:
+        divisor= divisor* -1
+        signo= -1
+    if dividendo<0:
+        dividendo= dividendo* -1
+        signo= -1
     div= dividendo - divisor
     while div>=0: # Se repite las veces necesarias para encontrar el cociente y el resto de la division
         cociente +=1
         div-= divisor
+    if signo==-1:
+        cociente*= signo
     resto= div + divisor
-    return cociente
+    result= cociente, resto
+    return result
 
-def resto(dividendo, divisor):
-    """
-    Funcion devulve el resto de una division con restas sucesibas
-    Precodindicion: Los numero deben ser flotantes positivos
-    Postcondicion: Resultado debe ser positivo
-    """
-    div= dividendo - divisor
-    while div>=0:
-        div-= divisor
-    resto= div + divisor
-    return resto
 
 def principal():
     print("Ingrese 2 numero para realizar la divicion")
     num1=float(input("Valor 1: "))
     num2= float(input("Valor 2: "))
-    while num2<=0:
+    while num2==0:
         print("El valor de numero 2 debe ser distinto de 0")
         num2= float(input("Ingrese valor correcto: "))
-    cociente= division_lenta(num1,num2)
-    reesto= resto(num1,num2)
-    print(f"Cociente: {cociente} Resto: {reesto}")
+    cocient_rest= division_lenta(num1,num2)
+    print("El cociente y el resto de la divicion son los sig: ", cocient_rest)
     
 if __name__ == "__main__":
     principal()
