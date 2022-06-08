@@ -9,17 +9,20 @@ Escribir una función que retorne una tuple con factores primos de un numero ent
 def factores_primos(numero):
     """
     factores primos es una funcion en la cual ingresa un numero y determina sus factores primos
+    Precodindicion: Numero debe ser entero mayor a 0
+    Postcondicion: Retorna tupla con los factores primos del numero ingresado
     """
     factor_primo=2
     resto=0
-    factores=[]
+    factor=[]
     while numero > 1:
         if numero% factor_primo==0:
             agregar=factor_primo
-            factores.append(agregar)
+            factor.append(agregar)
             numero= numero// factor_primo
         else:
-            factor_primo+=1   
+            factor_primo+=1
+    factores = tuple(factor)
     return factores
     
 def principal():
