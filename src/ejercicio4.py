@@ -12,6 +12,8 @@ La funcion debe ser capaz de sumar cualquier numero entero positivo y negativo.
 def suma_lenta(numero, otro_numero):
     """
     Suma 2 numeros, el segundo numero se suma de a 1
+    Precodindicion: Se espera 2 numeros enteros, para realizar la suma
+    Postcondicion: Retorna la suma de los numeros dependiendo del sigo
     """
     num2= otro_numero
     num1= numero
