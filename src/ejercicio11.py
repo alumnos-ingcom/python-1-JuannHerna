@@ -8,17 +8,16 @@ Escribir una función que indique con True si un número entero es multiplo de o
 def es_multiplo(numero, multiplo):
     """
     Esta funcion determina si un numero es multiplo de otro
+    Precodindicion: Los numeros deben ser enteros
+    Postcondicion: retorna un valor booleano True o False
     """
     aux=numero
     cont=0
-    result= False
+
     while aux>0:
         result= aux-multiplo
         aux= result
-    if result==0:
-        result= True
-        
-    return result
+    return result==0
     
 def principal():
     print("Ingrese dos numero para determinar si es multiplo:")
