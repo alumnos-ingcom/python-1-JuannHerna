@@ -18,6 +18,7 @@ def convertir_a_fahrrenheit(centigrados):
     Postcondicion: Retorna el numero de la convercion a fahrenheit
     """
     result= centigrados * 1.8 + 32
+    result=round(result,2)
     return result
     #F = ºC x 1.8 + 32
     
@@ -29,6 +30,7 @@ def convertir_a_centigrados(fahrenheit):
     """
     #ºC = (ºF-32) ÷ 1.8
     result= (fahrenheit-32) / 1.8
+    result=round(result,2)
     return result
 
 def asignacion(opcion):# Pide al usuario indicar el valor para convertir a la temperatura a difetentes grados
