@@ -9,6 +9,8 @@ Escribir una función que mediante restas sucesivas, obtenga el valor del cocien
 def division_lenta(dividendo, divisor):
     """
     Division lenta retorna el cociente de la division
+    Precodindicion: Los numero deben ser flotantes positivos
+    Postcondicion: Resultado debe ser positivo
     """
     resto=0
     cociente=0
@@ -21,7 +23,9 @@ def division_lenta(dividendo, divisor):
 
 def resto(dividendo, divisor):
     """
-    Funcion devulve el resto de una division con restas sucesibas 
+    Funcion devulve el resto de una division con restas sucesibas
+    Precodindicion: Los numero deben ser flotantes positivos
+    Postcondicion: Resultado debe ser positivo
     """
     div= dividendo - divisor
     while div>=0:
