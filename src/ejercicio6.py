@@ -10,6 +10,8 @@ Y Viceversa
 def ordenar_mayor_a_menor(uno, dos, tres):
     """
     Funcion ordena en un lista de 3 argumentos de mayor a menor
+    Precodindicion:
+    Postcondicion:
     """
     lista=[uno, dos, tres]
     for j in range(1,len(lista)):
@@ -18,7 +20,8 @@ def ordenar_mayor_a_menor(uno, dos, tres):
                  aux= lista[i]
                  lista[i]=lista[i+1]
                  lista[i+1]=aux
-    return lista
+    lists= tuple(lista)
+    return lists
     
 def ordenar_menor_a_mayor(uno, dos, tres):
     """
@@ -33,8 +36,8 @@ def ordenar_menor_a_mayor(uno, dos, tres):
                 aux= lista[i]
                 lista[i]=lista[i+1]
                 lista[i+1]=aux
-
-    return lista
+    lists= tuple(lista)
+    return lists
     
 def principal():
     print("Ingrese 3 numero para ordenarlo de mayor a menor")
