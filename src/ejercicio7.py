@@ -10,6 +10,8 @@ Y otra que haga el cambio en el sentido contrario, devolviendo una tuple.
 Recuerden que un grado son 60 minutos y un minuto son 60 segundos.
 """
 def sexadecimal_a_decimal(horas, minutos, segundos):
+    """
+    """
     seg_totales=0
     if horas>0: #convierte hs a seg
         seg_totales+= horas * 3600
@@ -20,6 +22,11 @@ def sexadecimal_a_decimal(horas, minutos, segundos):
     return seg_totales
 
 def decimal_a_sexadecimal(numero):
+    """
+    Esta funcion Transforma un numero ingresado a hs, min y seg
+    Precondicion: El numero debe ser entero postivo
+    Postcondicion: Resultado debe ser un tupla
+    """
     hs= numero//3600
     resto= numero%3600
     minutos= resto//60
