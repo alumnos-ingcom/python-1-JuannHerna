@@ -10,14 +10,16 @@ from src.ejercicio1 import convertir_a_centigrados
     Asigna variables a las funciones para determinar su validacion
     
 """
-def busca_fahrrenheit():
+def test_busca_fahrrenheit():
     numero=56
+    esperado=132.8
     result= convertir_a_fahrrenheit(numero)
     assert isinstance(result, float), "El resultado debe ser un numero flotante"
-    assert result > numero, "Cuenta salio bien"
+    assert result == esperado, "El resultado de la cuenta no es el esperado"
     
-def busca_centigrados():
+def test_busca_centigrados():
     numero=67
+    esperado=19.44
     resultado= convertir_a_centigrados(numero)
-    assert isinstance(result, float), "El resultado debe ser un numero flotante"
-    assert result < numero, "Cuenta salio bien"
+    assert isinstance(resultado, float), "El resultado debe ser un numero flotante"
+    assert resultado ==esperado, "El resultado de la cuenta no es el esperado"
