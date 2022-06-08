@@ -10,4 +10,4 @@ def test_division_cociente():
     num2= 3
     result= division_lenta(num1,num2)
     assert isinstance(result, tuple), "El resultado esperado deberia ser una tupla"
-    assert result >= 1, "El cociente no puede ser menor a 1"
+    
