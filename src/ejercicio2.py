@@ -9,7 +9,9 @@ Escribir una función que reciba un número e indique si el mismo es positivo, n
 """
 def signo(numero):
     """
-    Determina el sigo de un numero retornando un valor numerico 1, -1, 0 
+    Determina el sigo de un numero retornando un valor numerico 1, -1, 0
+    Precodindicion: El numero deber ser entero
+    Postcondicion: Retorna numero dependiendo del signo
     """
     num= numero
     minimo=0
