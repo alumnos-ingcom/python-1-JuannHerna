@@ -10,8 +10,8 @@ Palíndromo,es si se lee igual de derecha a izquierda que de izquierda a derecha
 def es_palindromo(texto):
     """
     Esta funcion determina si un numero o una frase son palindromas
-    Precodindicion:
-    Postcondicion:
+    Precodindicion: El parametro ingresado deber ser un str
+    Postcondicion: debe retornarl el valor logico True o false
     """
     text1=texto
     maxx=len(text1)
